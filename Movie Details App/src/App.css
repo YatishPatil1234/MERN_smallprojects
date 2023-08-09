@@ -1,0 +1,95 @@
+/* Add global styles here */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.movie-card {
+  position: relative;
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.movie-card:hover .buttons {
+  opacity: 1;
+  /* Show buttons on hover */
+}
+
+.buttons {
+  opacity: 0;
+  /* Hide buttons initially */
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.buttons button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.buttons button:hover {
+  background-color: #0056b3;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.search-button {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.search-results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* ... */
